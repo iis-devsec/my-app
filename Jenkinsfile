@@ -1,7 +1,7 @@
 
 node {
  stage('SCM Checkout'){
-	url: 'https://github.com/iis-devsec/my-app'
+	git 'https://github.com/iis-devsec/my-app'
    
    }
    
