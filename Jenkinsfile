@@ -8,7 +8,7 @@ node {
 	
 	  stage('SonarQube analysis') {
     def scannerHome = tool name: 'sonjen2', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-    withSonarQubeEnv('My SonarQube Server') { // If you have configured more than one global server connection, you can specify its name
+    withSonarQubeEnv('sonjen2') { // If you have configured more than one global server connection, you can specify its name
       sh "${scannerHome}/bin/sonar-scanner"
     }
   }
