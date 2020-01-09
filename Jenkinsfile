@@ -19,6 +19,7 @@ node {
 	    //sh "${scannerHome}/bin/sonar-scanner"
     }
   }
+}
 /*	
    
    stage('Compile-Package & Source-code Analysis'){
@@ -29,7 +30,7 @@ node {
       
    }
 */
-}
+//}
 /*
    stage('SonarQube Analysis') {
         def mvnHome =  tool name: 'maven 3.6.3', type: 'maven' 
